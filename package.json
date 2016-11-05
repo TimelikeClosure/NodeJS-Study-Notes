@@ -1,0 +1,20 @@
+{
+  "name": "study_notes",
+  "version": "1.0.0",
+  "description": "The following is a rendition of my own personal study notes about Node.JS that I have decided to share with you. While I attempt to cover all the basics I make no attempt to be thorough.  I have removed some of the best parts and, in true mentorship spirit, reframed them in the form of a question or exercise that you can followup on.",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimelikeClosure/NodeJS-Study-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimelikeClosure/NodeJS-Study-Notes/issues"
+  },
+  "homepage": "https://github.com/TimelikeClosure/NodeJS-Study-Notes#readme"
+}
