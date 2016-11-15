@@ -38,6 +38,7 @@
 * Can a _global_ **package** be a _dependency_ to your _Node app_?  Explain why or why not?
 > A global package cannot be explicitly listed as a dependency of a NodeJS application in its `package.json` file, because the developers refuse to ever add that functionality. The app can, however, still depend on the global package if it `require()`s it.
 * Launch your **NodeJS** app using the dev configuration.
+> NodeJS can be launched one time using the dev configuration by setting the `NODE_ENV` environment before starting the application: `NODE_ENV=development node app.js`.
 
 
 ## Modules
