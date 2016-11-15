@@ -7,24 +7,36 @@
 ## Launching a _Node app_
 
 * What does `npm start` do?
-> `npm start` runs the terminal script spcified in the `scripts.start` property in the `packages.json` file.
+> `npm start` runs the terminal script specified in the `scripts.start` property in the `packages.json` file.
 
 
 ## NodeJS Packages
 
 * Create a new _Node app_.  Add a `package.json` file
+> Done.
 * What is the purpose of the `main` key/value in the `package.json` file?
+> The purpose of the `main` key/value in the `package.json` file is to tell Node which file to run when the app is included in another app using `require(...)`.
 * Install at least one **package** to the _project_
+> Done with `npm install "body-parser" --save`.
 * What happens if you omit `--save` when installing a **package**?
+> If `npm install [package name]` is done without `--save`, the package will not be added to the app's list of dependencies in its `package.json` file and hence, will not be added automatically on other machines using `npm install`.
 * Install at least one **package** that is specific to the dev dependencies (HINT: testing usually will be dev specific (as in development, vs deployed to the end users and ready to use))
+> Done with `npm install protractor --save-dev`.
 * Remove at least one **package** from the _project_
     * Validate that `package.json` reflects the change.  If not, figure out why and try again
+> Done with `npm uninstall protractor --save-dev`.
 * Install a specific _version_ of a package to the _project_
+> Done with `npm install protractor@4.0.0 --save-dev`.
 * What directory does NPM install _local_ **packages** to?
+> NPM packages installed locally are located in the `node_modules/` directory inside the app's root directory.
 * What happens if you install a **package** at a different directory level than the application root directory?
+> When the `npm install` command is used inside an application's sub-directory, the package is still installed in the `{application_root}/node_modules` directory.
 * How can you avoid uploading **package** files to github?  (HINT: git.ignore... but how, specifically?)
+> Package files can be prevented from being uploaded to GitHub by adding the line `node_modules/` to the `{application_root}/.gitignore` file.
 * Install a _global_ package (`Nodemon`??)
+> Installed with `npm install --global Nodemon`.
 * Can a _global_ **package** be a _dependency_ to your _Node app_?  Explain why or why not?
+> A global package cannot be explicitly listed as a dependency of a NodeJS application in its `package.json` file, because the developers refuse to ever add that functionality. The app can, however, still depend on the global package if it `require()`s it.
 * Launch your **NodeJS** app using the dev configuration.
 
 
