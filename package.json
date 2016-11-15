@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/TimelikeClosure/NodeJS-Study-Notes/issues"
   },
-  "homepage": "https://github.com/TimelikeClosure/NodeJS-Study-Notes#readme"
+  "homepage": "https://github.com/TimelikeClosure/NodeJS-Study-Notes#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2"
+  },
+  "devDependencies": {
+    "protractor": "^4.0.0"
+  }
 }
