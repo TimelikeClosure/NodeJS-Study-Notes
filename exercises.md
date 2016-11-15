@@ -1,6 +1,7 @@
 ## Overview
 
 * Does jQuery work on **NodeJS**?  Why or why not?
+> jQuery does work on NodeJS as long as a window with a document exists, which can be mocked with another library such as the package "jsdom". If this is used to update the DOM in a browser through a shadow DOM, it won't be as responsive as when running on the browser directly, since there is a communication delay between server and client.
 
 
 ## Launching a _Node app_
