@@ -6,6 +6,7 @@
 ## Launching a _Node app_
 
 * What does `npm start` do?
+> `npm start` runs the terminal script spcified in the `scripts.start` property in the `packages.json` file.
 
 
 ## NodeJS Packages
